@@ -69,15 +69,15 @@ setup(
     version=VERSION,
     description="""API to enable and disable manager access to Studio and Djanggo on portals""",
     long_description=README + '\n\n' + CHANGELOG,
-    author='edX',
-    author_email='oscm@edx.org',
-    url='https://github.com/edx/edx-manager-access-api',
+    author='arora-r',
+    author_email='rohit.arora1@ibm.com',
+    url='https://github.com/arora-r/edx-manager-access-api',
     packages=[
         'edx_manager_access_api',
     ],
     include_package_data=True,
     install_requires=load_requirements('requirements/base.in'),
-    python_requires=">=3.8",
+    # python_requires=">=3.8",
     license="AGPL 3.0",
     zip_safe=False,
     keywords='Python edx',
@@ -91,4 +91,9 @@ setup(
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.8',
     ],
+    entry_points={
+        'lms.djangoapp': [
+            'edx_manager_access_api = edx_manager_access_api.apps:EdxManagerAccessApiConfig',
+        ],
+    }
 )

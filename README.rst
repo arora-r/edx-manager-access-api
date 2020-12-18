@@ -4,26 +4,8 @@ edx-manager-access-api
 |pypi-badge| |travis-badge| |codecov-badge| |doc-badge| |pyversions-badge|
 |license-badge|
 
-The ``README.rst`` file should start with a brief description of the repository,
-which sets it in the context of other repositories under the ``edx``
-organization. It should make clear where this fits in to the overall edX
-codebase.
+Exposes ability to enable and disable manager access to Studio and Djanggo on portals as API endpoints
 
-API to enable and disable manager access to Studio and Djanggo on portals
-
-Overview (please modify)
-------------------------
-
-The ``README.rst`` file should then provide an overview of the code in this
-repository, including the main components and useful entry points for starting
-to understand the code in more detail.
-
-Documentation
--------------
-
-(TODO: `Set up documentation <https://openedx.atlassian.net/wiki/spaces/DOC/pages/21627535/Publish+Documentation+on+Read+the+Docs>`_)
-
-Development Workflow
 --------------------
 
 One Time Setup
@@ -31,7 +13,7 @@ One Time Setup
 .. code-block::
 
   # Clone the repository
-  git clone git@github.com:edx/edx-manager-access-api.git
+  git clone git@github.com:arora-r/edx-manager-access-api.git
   cd edx-manager-access-api
 
   # Set up a virtualenv using virtualenvwrapper with the same name as the repo and activate it
@@ -117,12 +99,12 @@ For more information about these options, see the `Getting Help`_ page.
     :target: https://pypi.python.org/pypi/edx-manager-access-api/
     :alt: PyPI
 
-.. |travis-badge| image:: https://travis-ci.com/edx/edx-manager-access-api.svg?branch=master
-    :target: https://travis-ci.com/edx/edx-manager-access-api
+.. |travis-badge| image:: https://travis-ci.com/arora-r/edx-manager-access-api.svg?branch=master
+    :target: https://travis-ci.com/arora-r/edx-manager-access-api
     :alt: Travis
 
-.. |codecov-badge| image:: https://codecov.io/github/edx/edx-manager-access-api/coverage.svg?branch=master
-    :target: https://codecov.io/github/edx/edx-manager-access-api?branch=master
+.. |codecov-badge| image:: https://codecov.io/github/arora-r/edx-manager-access-api/coverage.svg?branch=master
+    :target: https://codecov.io/github/arora-r/edx-manager-access-api?branch=master
     :alt: Codecov
 
 .. |doc-badge| image:: https://readthedocs.org/projects/edx-manager-access-api/badge/?version=latest
@@ -133,6 +115,6 @@ For more information about these options, see the `Getting Help`_ page.
     :target: https://pypi.python.org/pypi/edx-manager-access-api/
     :alt: Supported Python versions
 
-.. |license-badge| image:: https://img.shields.io/github/license/edx/edx-manager-access-api.svg
-    :target: https://github.com/edx/edx-manager-access-api/blob/master/LICENSE.txt
+.. |license-badge| image:: https://img.shields.io/github/license/arora-r/edx-manager-access-api.svg
+    :target: https://github.com/arora-r/edx-manager-access-api/blob/master/LICENSE.txt
     :alt: License
