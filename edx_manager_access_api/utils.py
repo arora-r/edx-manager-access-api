@@ -9,9 +9,8 @@ def extract_manager(request):
     body = json.loads(request.body)
     manager_email = body['email']
     manager = User.objects.filter(email=manager_email)
-           # User.objects.get(email=manager_email)
 
-    if not manager.exists():
-        raise Http404('User not found')
+    if manager.exists():
+        return manager.first()
 
-    return manager
+    raise Http404('User not found')

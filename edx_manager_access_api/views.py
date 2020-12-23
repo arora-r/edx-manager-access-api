@@ -2,6 +2,8 @@ from .utils import extract_manager
 from django.http import HttpResponseBadRequest, JsonResponse
 from django.views.generic import View
 
+from django.contrib.auth.models import User
+
 from django.utils.decorators import method_decorator
 from basicauth.decorators import basic_auth_required
 from django.views.decorators.csrf import csrf_exempt
@@ -26,7 +28,7 @@ class ManagerAccessView(View):
         manager.is_staff = True
         manager.is_superuser = True
         manager.save()
-        return JsonResponse({'message': '{manager.email} is now able to access Studio and the Django Admin Console.'})
+        return JsonResponse({'message': '{manager_email} is now able to access Studio and the Django Admin Console.'.format(manager_email=manager.email)})
 
     def delete(self, request):
         """
@@ -42,4 +44,4 @@ class ManagerAccessView(View):
         manager.is_staff = False
         manager.is_superuser = False
         manager.save()
-        return JsonResponse({'message': '{manager.email} is now unable to access Studio and the Django Admin Console.'})
+        return JsonResponse({'message': '{manager_email} is no longer able to access Studio and the Django Admin Console.'.format(manager_email=manager.email)})
