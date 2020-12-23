@@ -15,7 +15,7 @@ class EdxManagerAccessApiConfig(AppConfig):
         'url_config': {
             'lms.djangoapp': {
                 'namespace': 'edx_manager_access_api',
-                'regex': r'^sn-api/manager/access/',
+                'regex': r'^sn-api/manager-access/',
             },
         },
         'settings_config': {

@@ -2,8 +2,6 @@ from .utils import extract_manager
 from django.http import HttpResponseBadRequest, JsonResponse
 from django.views.generic import View
 
-from django.contrib.auth.models import User
-
 from django.utils.decorators import method_decorator
 from basicauth.decorators import basic_auth_required
 from django.views.decorators.csrf import csrf_exempt
@@ -14,7 +12,7 @@ class ManagerAccessView(View):
     """
     Provides functionality to interact with EdX staff and superuser access
     """
-    def post(request):
+    def post(self, request):
         """
         Enables a manager to have studio and django access
         body params
@@ -30,7 +28,7 @@ class ManagerAccessView(View):
         manager.save()
         return JsonResponse({'message': '{manager.email} is now able to access Studio and the Django Admin Console.'})
 
-    def delete(request):
+    def delete(self, request):
         """
         Removes a manager from having studio and django access
         body params
