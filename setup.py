@@ -67,7 +67,7 @@ CHANGELOG = open(os.path.join(os.path.dirname(__file__), 'CHANGELOG.rst')).read(
 setup(
     name='edx-manager-access-api',
     version=VERSION,
-    description="""API to enable and disable manager access to Studio and Djanggo on portals""",
+    description="""API to enable and disable manager access to Studio and Django on portals""",
     long_description=README + '\n\n' + CHANGELOG,
     author='arora-r',
     author_email='rohit.arora1@ibm.com',
