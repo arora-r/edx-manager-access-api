@@ -364,7 +364,7 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
     (top_level_doc, project_title, documentation_title,
-     author, project_title, 'API to enable and disable manager access to Studio and Djanggo on portals',
+     author, project_title, 'API to enable and disable manager access to Studio and Django on portals',
      'Miscellaneous'),
 ]
 

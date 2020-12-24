@@ -6,7 +6,7 @@
 edx-manager-access-api
 ======================
 
-API to enable and disable manager access to Studio and Djanggo on portals
+API to enable and disable manager access to Studio and Django on portals
 
 Contents:
 

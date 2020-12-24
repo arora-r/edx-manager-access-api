@@ -1,5 +1,5 @@
 """
-API to enable and disable manager access to Studio and Djanggo on portals.
+API to enable and disable manager access to Studio and Django on portals.
 """
 
 __version__ = '0.1.0'

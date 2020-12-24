@@ -4,7 +4,7 @@ edx-manager-access-api
 |pypi-badge| |travis-badge| |codecov-badge| |doc-badge| |pyversions-badge|
 |license-badge|
 
-Exposes ability to enable and disable manager access to Studio and Djanggo on portals as API endpoints
+Exposes ability to enable and disable manager access to Studio and Django on portals as API endpoints
 
 --------------------
 
